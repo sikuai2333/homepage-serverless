@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#">个人主页</a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#projects">项目</a></li>
+                        <li><a href="#skills">技能</a></li>
+                        <li><a href="#contact">联系</a></li>
+                    </ul>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>你好，我是<span class="highlight">您的名字</span></h1>
+                <p class="subtitle">职业头衔 | 专业领域</p>
+                <p class="description">这里是您的简短介绍，描述您的专业背景、兴趣爱好或者您想要展示的个人特点。</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">联系我</a>
+                    <a href="#projects" class="btn btn-secondary">查看作品</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300" alt="个人照片">
+                </div>
+                <div class="about-text">
+                    <p>在这里详细介绍您自己，包括您的教育背景、工作经历、专业技能以及个人兴趣等。这部分内容应该能够让访问者更全面地了解您。</p>
+                    <p>您可以分享您的职业目标、价值观以及您在专业领域的成就。这是展示您个性和专业素养的好地方。</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>教育背景</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>工作经验</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>所在地</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">我的项目</h2>
+            <div class="projects-grid">
+                <!-- 近期更新的GitHub仓库 -->
+                <div class="project-card github-repo-card" data-parallax="0.1">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x200" alt="GitHub仓库1">
+                    </div>
+                    <div class="project-info">
+                        <h3>近期仓库 1</h3>
+                        <p>这是您近期更新的GitHub仓库，展示您的最新技术成果和项目进展。</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>GraphQL</span>
+                        </div>
+                        <div class="github-repo-stats">
+                            <div class="github-repo-stat"><i class="fas fa-star"></i> <span>24</span></div>
+                            <div class="github-repo-stat"><i class="fas fa-code-branch"></i> <span>8</span></div>
+                            <div class="github-repo-stat"><i class="fas fa-code"></i> <span>JavaScript</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> 查看演示</a>
+                            <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> 源代码</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card github-repo-card" data-parallax="0.15">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x200" alt="GitHub仓库2">
+                    </div>
+                    <div class="project-info">
+                        <h3>近期仓库 2</h3>
+                        <p>这是您近期更新的另一个GitHub仓库，展示您的技术多样性和项目经验。</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="github-repo-stats">
+                            <div class="github-repo-stat"><i class="fas fa-star"></i> <span>16</span></div>
+                            <div class="github-repo-stat"><i class="fas fa-code-branch"></i> <span>5</span></div>
+                            <div class="github-repo-stat"><i class="fas fa-code"></i> <span>Vue</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> 查看演示</a>
+                            <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> 源代码</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card github-repo-card" data-parallax="0.2">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x200" alt="GitHub仓库3">
+                    </div>
+                    <div class="project-info">
+                        <h3>近期仓库 3</h3>
+                        <p>这是您的第三个近期GitHub仓库，展示您的持续学习和技术创新能力。</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="github-repo-stats">
+                            <div class="github-repo-stat"><i class="fas fa-star"></i> <span>32</span></div>
+                            <div class="github-repo-stat"><i class="fas fa-code-branch"></i> <span>12</span></div>
+                            <div class="github-repo-stat"><i class="fas fa-code"></i> <span>Python</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> 查看演示</a>
+                            <a href="#" class="btn btn-sm"><i class="fab fa-github"></i> 源代码</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">技能专长</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>前端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>后端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">数据库</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>其他技能</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">UI/UX设计</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">项目管理</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Git/GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3>邮箱</h3>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3>电话</h3>
+                            <p>+86 123 4567 8910</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3>地址</h3>
+                            <p>中国，城市，地址</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">消息</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 个人主页. 保留所有权利.</p>
+                <div class="footer-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">条款和条件</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <!-- 鼠标跟踪效果 -->
+    <div class="mouse-follower"></div>
+    <script>
+        // 鼠标跟踪效果
+        const mouseFollower = document.querySelector('.mouse-follower');
+        document.addEventListener('mousemove', (e) => {
+            mouseFollower.style.left = e.clientX + 'px';
+            mouseFollower.style.top = e.clientY + 'px';
+        });
+        
+        // 鼠标悬停在链接和按钮上时的效果
+        const interactiveElements = document.querySelectorAll('a, button, .project-card');
+        interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                mouseFollower.style.width = '60px';
+                mouseFollower.style.height = '60px';
+                mouseFollower.style.borderColor = 'var(--accent-color)';
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                mouseFollower.style.width = '40px';
+                mouseFollower.style.height = '40px';
+                mouseFollower.style.borderColor = 'var(--primary-color)';
+            });
+        });
+    </script>
+</body>
+</html>
