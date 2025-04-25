@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function useDefaultRepoData() {
-        // 如果API请求失败，使用默认数据
+        // 如果API请求失败，使用默认数据，自行修改
         const username = 'sikuai2333'; // 确保使用正确的GitHub用户名
         const defaultRepos = [
             {
